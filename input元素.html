@@ -1,0 +1,74 @@
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>input元素</title>
+</head>
+<body>
+	<!-- url类型 -->
+	<form >
+		<input  name="url" type="url" value="http://www.baidu.com">
+		<input type="submit" value="提交">		
+	</form>
+	<br>
+	<!--email类型-->
+	<form>
+		<input name="email" type="email" value="zhaokun_liu@163.com">
+		<input type="submit" value="提交">		
+	</form>
+	<br>	
+	<!--date类型-->
+	<input type="date" name="date" value="">
+	
+	<!--time类型--><br>	
+	<input type="time" name="time" value="10:00">
+
+	<!--datetime类型--><br>	
+	<input type="datetime" name="datetime" value="10:00">
+
+	<!--datetime-local类型--><br>	
+	<input type="datetimelocal" name="datetime-local" value="10:00">
+
+	<!--month类型--><br>	
+	<input type="month" name="month" value="2010-01-01">
+
+	<!--week类型--><br>	
+	<input type="week" name="week" >
+
+	<!--number--><br>	
+	<input type="number" name="number" value="15" min="10" max="100" step="5">
+	<br>
+
+	<script>
+		function sum(){
+			var n1=document.getElementById("num1").valueAsNumber;
+			var n2=document.getElementById("num2").valueAsNumber;
+			document.getElementById("result").valueAsNumber = n1+n2;
+		}
+	</script>
+	<form>
+		<input type="number" id="num1">
+		+
+		<input type="number" id="num2">
+		=
+		<input type="number" id="result" readonly>
+		<input type="button" value="计算" onclick="sum()">
+	</form>
+	
+	<!--range类型--><br>	
+	<input type="range" name="range" value="25" min="0" max="100" step="5">
+	<!--search类型--><br>	
+	<input type="search">
+	<!--tel类型--><br>	
+	<input type="tel">
+	<!--color类型--><br>	
+	<input type="color" onchange="document.body.style.backgroundColor=document.getElementById("currentColor").textContent=this.value;">
+	<span id ="currentColor"></span>
+	
+	<form id ="textform">
+
+
+	</form>
+
+</body>
+</html>
+ 

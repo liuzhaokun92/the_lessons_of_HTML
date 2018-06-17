@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<!---figure元素及figcaption 元素-->
+	<figure>
+	<img src="1.img" art="图片">
+	<figcaption>  图片</figcaption>
+	</figure>
+	<br/>
+	<script >
+		function detail_onlick(detail){
+			var p=document.getElementById("p")；
+			if (detail.open){
+				p.style.visibility="hidden";
+			}
+			else{
+				p.style.visibility="visibility";
+			}
+		}
+	</script>
+
+	<details id="detail " onclick="detail_onlick( this )">
+	<summary>速度与激情7</summary>
+	<p id="p" style="visibility: hidden">你好,这是为保罗特意打造的电影</p>
+	</details>
+
+	<!--mark元素-->
+	<p>
+		这是一段文字，用来<mark>测试</mark>Mark元素
+	</p>
+</body>
+</html>
+ 
